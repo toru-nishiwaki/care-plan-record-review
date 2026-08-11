@@ -1,0 +1,9 @@
+# 開発の出発点である認知症リスク予測モデルの分析・再現に必要な追加パッケージ。
+# 現行の計画書・記録レビューPoC（app.py）の実行には不要。
+# 使用箇所: notebook/, src/dementia_risk_prediction.py, scripts/export_streamlit_assets.py,
+#           scripts/generate_operations_demo.py
+numpy==2.0.2
+scikit-learn==1.6.1
+matplotlib==3.9.4
+seaborn
+joblib==1.5.3
