@@ -62,6 +62,11 @@ MMSEと組み合わせた段階的な介入ルールを設計することで、
 - 目的変数：Diagnosis（0: 健常、1: アルツハイマー）
 """
 
+# このスクリプトを再実行するには、requirements.txtに加えて requirements-research.txt
+# （numpy, scikit-learn, matplotlib, seaborn, joblib）を別途インストールしてください。
+# 例: python3 -m pip install -r requirements-research.txt
+# 現行の計画書・記録レビューPoC（app.py）の実行にはこのスクリプトも追加パッケージも不要です。
+
 #ライブラリ & データ読み込み
 import pandas as pd
 import numpy as np
@@ -74,7 +79,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 sns.set_theme(style="darkgrid")
 
-df = pd.read_csv("alzheimers_disease_data.csv")
+df = pd.read_csv("data/alzheimers_disease_data.csv")  # リポジトリルートから実行する想定
 
 """## 前処理
 不要なカラムを削除し、モデル学習の準備を行う
