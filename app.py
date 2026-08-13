@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-介護記録CSVから状態変化と確認優先度を整理するPoC
-Care Plan & Record Review Support PoC
+計画書・介護記録を横断し、状態変化と確認優先度を整理するPoC
+Care Plan & Record Review
 
 訪問介護計画書に書かれた予定支援と、日々の介護記録・モニタリングに残された
 実際の状態を比較し、状態変化・計画とのずれ・次に確認すべきことを整理する
@@ -50,7 +50,7 @@ from rules import (
 # ============================================================
 
 st.set_page_config(
-    page_title="介護記録CSVから状態変化と確認優先度を整理するPoC",
+    page_title="Care Plan & Record Review",
     page_icon="🧭",
     layout="wide",
 )
@@ -854,8 +854,8 @@ def _build_upload_demo_zip() -> bytes:
 
 
 def page_plan_record_review():
-    st.title("介護記録CSVから状態変化と確認優先度を整理するPoC")
-    st.caption("訪問介護計画書と日々の記録を比較し、見落としやすい状態変化と、次回確認・共有すべき内容を職員が整理するための意思決定支援デモです。")
+    st.title("計画書・介護記録を横断し、状態変化と確認優先度を整理するPoC")
+    st.caption("訪問介護計画書、日々の介護記録、モニタリング記録を横断して比較し、見落としやすい状態変化と、次回確認・共有すべき内容を職員が整理するための意思決定支援デモです。")
 
     st.markdown("##### 解決したい現場課題")
     cc1, cc2, cc3 = st.columns(3)
