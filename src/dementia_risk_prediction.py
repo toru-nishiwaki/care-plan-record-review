@@ -250,7 +250,7 @@ feature_importance_df = pd.DataFrame({'feature': feature_names, 'importance': im
 feature_importance_df = feature_importance_df.sort_values('importance', ascending=False).head(15)
 
 plt.figure(figsize=(10, 6))
-sns.barplot(x='importance', y='feature', data=feature_importance_df, palette='viridis')
+sns.barplot(x='importance', y='feature', hue='feature', data=feature_importance_df, palette='viridis')
 plt.title('Top 15 Features Influencing Dementia Risk (High Precision Model)')
 plt.xlabel('Importance Score')
 plt.ylabel('Features')
