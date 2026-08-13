@@ -282,11 +282,10 @@ D001とU103は一見似ていますが、意味が異なります。
 
 一方で、訪問介護の現場ではこれらの構造化評価値を継続的に取得しにくいという課題があると判断し、現場で日々蓄積される計画書・介護記録・モニタリングを活用する方向へ転換しました。その結果として発展したのが、現在の計画書・記録レビューPoCです。
 
-分析の詳細（Notebook・分析スクリプト・サマリー資料）は次のとおりです。
+分析の詳細（Notebook・分析スクリプト）は次のとおりです。
 
 - 分析Notebook：[notebook/dementia_risk_prediction.ipynb](notebook/dementia_risk_prediction.ipynb)
 - 分析スクリプト：[src/dementia_risk_prediction.py](src/dementia_risk_prediction.py)
-- サマリー資料（PDF）：[docs/dementia_risk_prediction_slides.pdf](docs/dementia_risk_prediction_slides.pdf)
 
 モデルの学習資産（`models/`）と評価指標（`outputs/`）はリポジトリにそのまま残しています。
 
@@ -336,8 +335,7 @@ care-plan-record-review/
 │   ├── upload_demo/                # CSV取込確認用データ（U101〜U103）
 │   └── alzheimers_disease_data.csv # 開発の出発点：認知症リスク予測モデルの学習用データ
 ├── docs/
-│   ├── screenshots/                 # 公開用スクリーンショット
-│   └── dementia_risk_prediction_slides.pdf
+│   └── screenshots/                 # 公開用スクリーンショット
 ├── notebook/                    # 開発の出発点：認知症リスク予測モデルの分析Notebook
 ├── src/                         # 開発の出発点：認知症リスク予測モデルの分析スクリプト
 ├── scripts/                     # 開発の出発点：モデル学習・アセット書き出しスクリプト
