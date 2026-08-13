@@ -256,9 +256,9 @@ plt.xlabel('Importance Score')
 plt.ylabel('Features')
 plt.show()
 
-print("【コンサル視点の考察】")
-print("重要度上位にMMSEやADL、FunctionalAssessmentが並んでいることから、客観的な評価指標がリスク判定の核となっています。")
-print("現場運用では、これらの数値に変化があった利用者を自動的にリストアップする仕組みが有効です。")
+print("【実運用への示唆】")
+print("重要度上位にMMSEやADL、FunctionalAssessmentが並んでいることから、構造化された評価指標がリスク判定に強く寄与していることが分かります。")
+print("実運用では、これらの指標の変化を確認対象者の絞り込みに活用する方法が考えられます。")
 
 """## 特徴量重要度の解釈（現場知見との統合）
 
